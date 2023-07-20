@@ -3,46 +3,46 @@ Title:
 Cleaning an already cleaned dirt patch results in an increased patch count.
 Description:
 Scenario Name: "Room5x5_dirtpatch3_clean1_repeat" or "Room5x5_dirtpatch3_clean2"
-steps to reproduce:
+Steps to reproduce:
 use the scenario as specified under "Room5x5_dirtpatch3_clean1_repeat" from RobotTestScenario.json 
-observed result:
+Observed result:
 while the ending co-ordinates are correctly calculated the patches cleaned are reported as 2 while only one is cleaned twice.
 Expected results:
-A patch that has alredy been cleaned shouldn't result in increasing patch cleaned count.
+A patch that has already been cleaned shouldn't result in increasing patch cleaned count.
 
 Bug#2
 Title: 
-Number of patches reported cleaned are higher than total dirt patches placed .
+Number of patches reported cleaned are higher than total dirt patches placed.
 Description:
 Scenario Name: "Room5x5_dirtpatch3_clean3" 
-steps to reproduce:
-use the scenario as specified under "Room5x5_dirtpatch3_clean3" from RobotTestScenario.json.
-This probably has the same roort cause as the bug#1
-observed result:
-while the ending co-ordinates are correctly calculated. The total number of patches cleaned cannot be higher that the total number of intial dirt patches placed.
-expected results:
-Total number ofr dirt patches cleaned should always be less than or equal to the initial number of dirt pathes placed.
+Steps to reproduce:
+Use the scenario as specified under "Room5x5_dirtpatch3_clean3" from RobotTestScenario.json.
+This probably has the same root cause as the bug#1
+Observed result:
+While the ending co-ordinates are correctly calculated. The total number of patches cleaned cannot be higher that the total number of intial dirt patches placed.
+Expected results:
+Total number of dirt patches cleaned should always be less than or equal to the initial number of dirt patches placed.
 
 Bug#3
 Title:
-Negative starting co-ordinates for robot do not yeild consistent results.
+Negative starting co-ordinates for robot do not yield consistent results.
 Description:
 Scenario Name: "Negative_coords" and "Negative_coords_sit2"
-steps to reproduce:
+Steps to reproduce:
 Use the scenario as specified under "Negative_coords" or "Negative_coords_sit2" from RobotTestScenario.json.
-observed result:
+Observed result:
 While the "Negative_coords" scenario results in a error code 400 with empty response, the "Negative_coords_sit2" scenario results in a status 200 response code with bogus response body.
-expected results:
-unacceptable starting co-ordinates  for the robot should always yeild in a status response of 400 with an empty body.
+Expected results:
+Unacceptable starting co-ordinates  for the robot should always yield in a status response of 400 with an empty body.
 
 Bug# 4
 Title:
-Dirt patches being reportd as cleaned when no patches were installed in scnerio description.
+Dirt patches being reported as cleaned when no patches were installed in scenerio description.
 Description:
 Scenario Name: "Room5x5_dirtpatch0"
-steps to reproduce:
+Steps to reproduce:
 Use the scenario as specified under "Room5x5_dirtpatch0" from RobotTestScenario.json.
-observed result:
-While there were no dirt patches installed in the scenario and movement instruction yeilds in more than 0 dirt patches being cleaned.
-expected results:
+Observed result:
+While there were no dirt patches installed in the scenario and movement instruction yields in more than 0 dirt patches being cleaned.
+Expected results:
 Dirt patches cleaned should be reported as 0, when there are no patches installed.
