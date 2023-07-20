@@ -1,4 +1,6 @@
-This project has been creted in eclipse using java and Maven.
+Please find the bug report in bugreport.txt file along with an existing Cucumber HTML report present at CucumberRobotTest\target\cucumber-reports.html
+
+This project has been created in Eclipse using Java and Maven.
 The following main libraries have been used in developing this project
 1) Restassured
 2) Cucumber
